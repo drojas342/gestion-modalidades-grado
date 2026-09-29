@@ -18,7 +18,7 @@ El prototipo fue diseñado a partir del análisis del proceso de gestión de mod
 
 Durante el análisis del proceso se identificó el uso de diferentes medios para gestionar y consultar la información relacionada con las modalidades de grado, incluyendo **hojas de cálculo, documentos y archivos almacenados de forma local**.
 
-Esto podía dificultar:
+Esto dificulta:
 
 - La consulta y organización de la información.
 - El seguimiento del estado de los procesos.
@@ -63,7 +63,7 @@ Los usuarios que cuentan con los permisos correspondientes pueden cargar un trab
 - Título.
 - Palabras clave.
 - Descripción.
-- Usuario responsable del registro.
+- Autores.
 - Archivo PDF del trabajo.
 
 ### Estados y concepto del comité
@@ -76,7 +76,7 @@ El estado del proceso y el concepto del comité son datos diferentes.
 - Cancelada.
 - Finalizada.
 
-**Conceptos del comité:**
+**Conceptos del comité (Se decide si se acepta la propuesta):**
 
 - Pendiente.
 - Aprobado.
@@ -156,26 +156,6 @@ El sistema genera **JWT** para las sesiones y los transporta mediante una cookie
 
 El acceso a las funcionalidades se controla mediante middleware y permisos asociados al usuario.
 
-Usuario
-   │
-   ▼
-Inicio de sesión
-   │
-   ▼
-JWT en cookie
-   │
-   ▼
-Middleware de autenticación
-   │
-   ▼
-Comprobación de permisos
-   │
-   ├── Dirección de programa
-   │
-   ├── Explorar información sobre proyectos de grado culminados (Título, Descripción, PDF)
-   │
-   └── Permiso para subir información para trabajos de grado culminados
-
 Los estudiantes pueden consultar públicamente los trabajos de grado culminados, mientras que la carga de nuevos registros está disponible únicamente para los usuarios autorizados. De igual manera, el acceso al módulo de gestión de modalidades está restringido para usuarios normales.
 
 ---
@@ -193,31 +173,7 @@ La aplicación implementa validaciones relacionadas con:
 
 La calificación utiliza un rango de **0 a 100** y determinadas operaciones dependen del estado y de la información registrada en el proceso.
 
----
-
-## Flujo general
-
-Registro o inicio de sesión
-  │
-  ▼
-Identificación y permisos del usuario
-  │
-  ▼
-Consulta o gestión del proceso
-  │
-  ▼
-Registro y validación de información
-  │
-  ▼
-Actualización del estado
-  │
-  ▼
-Gestión documental
-  │
-  ▼
-Seguimiento del proceso
-
----
+ 
 
 ## Capturas del sistema
 
@@ -368,4 +324,3 @@ Soy **Ingeniero de Sistemas** con interés en el desarrollo backend y la automat
 
 **JavaScript · Node.js · Express.js · MySQL · SQL · Git/GitHub**
 
-Actualmente estoy fortaleciendo mis conocimientos en **Python, automatización y RPA**, con interés en aplicar mis bases de desarrollo de software al análisis y automatización de procesos.
