@@ -6,7 +6,7 @@ Ingeniería de Sistemas · Fundación Universitaria de San Gil (UNISANGIL)
 
 ---
 
-## 📌 Sobre el proyecto
+## Sobre el proyecto
 
 Este proyecto consiste en el desarrollo de un **prototipo funcional de una aplicación web para la gestión y seguimiento de procesos de modalidades de grado**.
 
@@ -14,7 +14,7 @@ El prototipo fue diseñado a partir del análisis del proceso de gestión de mod
 
 ---
 
-## 🎯 Problema y propuesta
+## Problema y propuesta
 
 Durante el análisis del proceso se identificó el uso de diferentes medios para gestionar y consultar la información relacionada con las modalidades de grado, incluyendo **hojas de cálculo, documentos y archivos almacenados de forma local**.
 
@@ -33,9 +33,9 @@ El prototipo permite explorar cómo estas actividades podrían gestionarse desde
 
 ---
 
-## ⚙️ Funcionalidades principales
+## Funcionalidades principales
 
-### 👤 Usuarios y acceso
+### Usuarios y acceso
 
 - Registro e inicio de sesión.
 - Autenticación mediante JWT.
@@ -43,7 +43,7 @@ El prototipo permite explorar cómo estas actividades podrían gestionarse desde
 - Autorización de funcionalidades mediante permisos asociados al usuario.
 - Protección CSRF en formularios.
 
-### 📋 Gestión de procesos
+### Gestión de procesos
 
 El sistema permite gestionar las siguientes modalidades de grado:
 
@@ -54,7 +54,7 @@ El sistema permite gestionar las siguientes modalidades de grado:
 
 Los procesos almacenan información de seguimiento y se relacionan con estudiantes, documentos, evaluaciones y datos específicos de cada modalidad.
 
-### 📚 Trabajos de grado culminados
+### Trabajos de grado culminados
 
 El sistema cuenta con un módulo para publicar y consultar trabajos de grado culminados. Los estudiantes pueden revisar esta información de manera pública para conocer trabajos previamente registrados.
 
@@ -66,7 +66,7 @@ Los usuarios que cuentan con los permisos correspondientes pueden cargar un trab
 - Usuario responsable del registro.
 - Archivo PDF del trabajo.
 
-### 🔄 Estados y concepto del comité
+### Estados y concepto del comité
 
 El estado del proceso y el concepto del comité son datos diferentes.
 
@@ -82,13 +82,13 @@ El estado del proceso y el concepto del comité son datos diferentes.
 - Aprobado.
 - Rechazado.
 
-### 📄 Gestión documental
+### Gestión documental
 
 Permite asociar archivos a los procesos y almacenar documentos mediante **Cloudinary**. También permite cargar y publicar archivos PDF correspondientes a trabajos de grado culminados.
 
 La interfaz de carga está orientada principalmente a documentos PDF y el acceso a la publicación está restringido a usuarios con los permisos correspondientes.
 
-### ✅ Validaciones
+### Validaciones
 
 El sistema implementa validaciones en diferentes flujos, entre ellas:
 
@@ -104,7 +104,7 @@ El sistema implementa validaciones en diferentes flujos, entre ellas:
 
 ---
 
-## 🏗️ Arquitectura
+## Arquitectura
 
 El proyecto utiliza una arquitectura basada en el patrón **MVC (Model-View-Controller)**:
 
@@ -139,7 +139,7 @@ La separación de responsabilidades permite mantener diferenciadas la presentaci
 
 ---
 
-## 🛠️ Tecnologías utilizadas
+## Tecnologías utilizadas
 
 | Área | Tecnologías |
 | --- | --- |
@@ -152,7 +152,7 @@ La separación de responsabilidades permite mantener diferenciadas la presentaci
 
 ---
 
-## 🔐 Autenticación y autorización
+## Autenticación y autorización
 
 El sistema genera **JWT** para las sesiones y los transporta mediante una cookie.
 
@@ -184,7 +184,7 @@ Los estudiantes pueden consultar públicamente los trabajos de grado culminados,
 
 ---
 
-## 🧠 Reglas de negocio
+## Reglas de negocio
 
 La aplicación implementa validaciones relacionadas con:
 
@@ -199,7 +199,7 @@ La calificación utiliza un rango de **0 a 100** y determinadas operaciones depe
 
 ---
 
-## 🔄 Flujo general
+## Flujo general
 
 ```text
 Registro o inicio de sesión
@@ -225,7 +225,7 @@ Seguimiento del proceso
 
 ---
 
-## 🖥️ Capturas del sistema
+## Capturas del sistema
 
 Las capturas se encuentran en la carpeta [`Imagenes/`](Imagenes/).
 
@@ -264,7 +264,7 @@ Las capturas se encuentran en la carpeta [`Imagenes/`](Imagenes/).
 
 ---
 
-## 🧩 Decisiones técnicas
+## Decisiones técnicas
 
 ### MVC
 
@@ -292,7 +292,7 @@ Las reglas de negocio se aplican durante los flujos de creación y actualizació
 
 ---
 
-## 🤖 Relación con mi interés en RPA
+## Relación con mi interés en RPA
 
 Este proyecto **no es una solución RPA** ni fue desarrollado específicamente con herramientas de automatización robótica de procesos.
 
@@ -307,7 +307,7 @@ Sin embargo, durante su desarrollo trabajé con conceptos transferibles al área
 
 ---
 
-## 📚 Metodología de desarrollo
+## Metodología de desarrollo
 
 El proyecto fue desarrollado individualmente utilizando elementos de **Scrum**.
 
@@ -323,7 +323,7 @@ El desarrollo se enfocó en construir progresivamente las funcionalidades necesa
 
 ---
 
-## 💻 ¿Qué desarrollé?
+## ¿Qué desarrollé?
 
 Durante el proyecto participé directamente en:
 
@@ -344,7 +344,7 @@ Durante el proyecto participé directamente en:
 
 ---
 
-## 🔧 Posibles mejoras
+## Posibles mejoras
 
 Entre las mejoras identificadas para una siguiente versión se encuentran:
  
@@ -355,7 +355,7 @@ Entre las mejoras identificadas para una siguiente versión se encuentran:
 
 ---
 
-## 🎓 Contexto académico
+## Contexto académico
 
 | Campo | Información |
 | --- | --- |
@@ -366,7 +366,7 @@ Entre las mejoras identificadas para una siguiente versión se encuentran:
 
 ---
 
-## 👨‍💻 Sobre mí
+## Sobre mí
 
 Soy **Ingeniero de Sistemas** con interés en el desarrollo backend y la automatización de procesos.
 
@@ -378,5 +378,6 @@ Actualmente estoy fortaleciendo mis conocimientos en **Python, automatización y
 
 
 
-#   g e s t i o n - m o d a l i d a d e s - g r a d o  
+#   g e s t i o n - m o d a l i d a d e s - g r a d o 
+ 
  
