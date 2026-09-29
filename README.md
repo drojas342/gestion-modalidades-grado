@@ -23,7 +23,7 @@ Esto podía dificultar:
 - La consulta y organización de la información.
 - El seguimiento del estado de los procesos.
 - La actualización de los datos.
-- La localización de documentos asociados. 
+- La localización de documentos asociados.
 
 Como respuesta a estas necesidades, se desarrolló un **prototipo funcional de una aplicación web** que plantea una alternativa para estructurar el proceso mediante:
 
@@ -108,32 +108,30 @@ El sistema implementa validaciones en diferentes flujos, entre ellas:
 
 El proyecto utiliza una arquitectura basada en el patrón **MVC (Model-View-Controller)**:
 
-```text
         ┌──────────────────┐
         │      Usuario     │
         └────────┬─────────┘
-           │
-           ▼
+                 │
+                 ▼
         ┌──────────────────┐
         │ Interfaz web Pug │
         └────────┬─────────┘
-           │
-           ▼
+                 │
+                 ▼
         ┌──────────────────┐
         │   Controllers    │
         └────────┬─────────┘
-           │
-           ▼
+                 │
+                 ▼
         ┌──────────────────┐
         │      Models      │
         │    Sequelize     │
         └────────┬─────────┘
-           │
-           ▼
+                 │
+                 ▼
         ┌──────────────────┐
         │      MySQL       │
         └──────────────────┘
-```
 
 La separación de responsabilidades permite mantener diferenciadas la presentación, la lógica de aplicación y el acceso a los datos.
 
@@ -158,7 +156,6 @@ El sistema genera **JWT** para las sesiones y los transporta mediante una cookie
 
 El acceso a las funcionalidades se controla mediante middleware y permisos asociados al usuario.
 
-```text
 Usuario
    │
    ▼
@@ -175,12 +172,11 @@ Comprobación de permisos
    │
    ├── Dirección de programa
    │
-   ├── Explorar información sobre proyecto de grado culminados (Título, Descripción, PDF)
+   ├── Explorar información sobre proyectos de grado culminados (Título, Descripción, PDF)
    │
    └── Permiso para subir información para trabajos de grado culminados
-```
 
-Los estudiantes pueden consultar públicamente los trabajos de grado culminados, mientras que la carga de nuevos registros está disponible únicamente para los usuarios autorizados. De igual manera, el acceso al módulo de gestion de modalidades esta restringido para usuarios normales.
+Los estudiantes pueden consultar públicamente los trabajos de grado culminados, mientras que la carga de nuevos registros está disponible únicamente para los usuarios autorizados. De igual manera, el acceso al módulo de gestión de modalidades está restringido para usuarios normales.
 
 ---
 
@@ -201,7 +197,6 @@ La calificación utiliza un rango de **0 a 100** y determinadas operaciones depe
 
 ## Flujo general
 
-```text
 Registro o inicio de sesión
   │
   ▼
@@ -221,7 +216,6 @@ Gestión documental
   │
   ▼
 Seguimiento del proceso
-```
 
 ---
 
@@ -303,7 +297,7 @@ Sin embargo, durante su desarrollo trabajé con conceptos transferibles al área
 - Modelamiento de información.
 - Validación de condiciones.
 - Automatización de operaciones mediante software.
-- Integración entre componentes.  
+- Integración entre componentes.
 
 ---
 
@@ -347,7 +341,7 @@ Durante el proyecto participé directamente en:
 ## Posibles mejoras
 
 Entre las mejoras identificadas para una siguiente versión se encuentran:
- 
+
 - Reforzar algunas restricciones de integridad directamente en la base de datos.
 - Incorporar pruebas automatizadas.
 - Mejorar la separación de algunas reglas de negocio.
@@ -375,9 +369,3 @@ Soy **Ingeniero de Sistemas** con interés en el desarrollo backend y la automat
 **JavaScript · Node.js · Express.js · MySQL · SQL · Git/GitHub**
 
 Actualmente estoy fortaleciendo mis conocimientos en **Python, automatización y RPA**, con interés en aplicar mis bases de desarrollo de software al análisis y automatización de procesos.
-
-
-
-#   g e s t i o n - m o d a l i d a d e s - g r a d o 
- 
- 
